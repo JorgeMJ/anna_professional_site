@@ -1,0 +1,502 @@
+
+/* === Layout ===========================================================================================================================*/
+
+* {
+  box-sizing: border-box;
+  font-family: 'Noto Sans SC', sans-serif;
+}
+
+html{
+	min-width: 1100px;
+}
+
+body {
+	margin: 0;
+	min-width: 1100px;
+}
+
+/* === Fonts ============================================================================================================================*/
+
+h1 {
+  font-size: 2.6em;
+}
+
+h2 {
+  font-size: 1.5em;
+}
+
+h3 {
+  font-size: 1.4em;
+}
+
+h4 {
+  font-size: 1.3em;
+}
+
+h5 {
+  font-size: 1.2em;
+}
+
+h6 {
+  font-size: 1em;
+}
+
+p,
+cite {
+  font-size: 0.9em;
+}
+
+a,
+button {
+  font-size: 1em;
+}
+
+
+/* === Nav bar =========================================================================================================================*/ 
+
+header {
+	position: absolute;
+	width: 100%;
+	text-align: center;
+	min-width: 1100px;
+}
+
+nav {
+	background-color: rgba(224,149,21, 0.8) ;
+	color: #0B0B0B;
+	padding-top: 10px;
+}
+
+ul {
+	margin: 0 auto;
+	background-color: transparent;
+	color: #0B0B0B;
+}
+
+li {
+	display: inline-block;
+	background-color: transparent;
+	margin-right: 40px;
+	height: 40px;
+}
+
+header a {
+	border: 2px solid  #0B0B0B;
+	color: #0B0B0B;
+	padding: 5px;
+	text-align: center;
+	text-decoration: none;
+}
+
+header a, button {
+  	font-size: 1.2em;
+}
+
+header a:hover,        /* This one reffers to 'Contact' in NavBar */
+.button-menu-bottom {  /* Class to add/remove at buttons when hover on/off */
+	color: #C03E02;
+	border-top: 10px solid #C03E02;  
+	margin-top: -10px;
+}
+
+
+header a:hover {
+	border: 2px solid #C03E02;  /* Menu Contact Box */
+}
+
+button {	
+	border: none;
+	height: 100%;
+	margin: 0;
+	background-color: transparent;
+}
+
+button:focus {
+	outline: 0;
+}
+
+
+/* === Top Panel =======================================================================================================================*/
+
+.top-panel {
+
+	background: url('../images/imagen2.jpg');
+  	background-size: cover;
+	background-position: center;
+	width: 100%;
+	height: 100vh;
+	z-index: 50;
+}
+
+.container-title {
+	width: 500px;
+	height: 140px;
+	padding: 10px;
+	background-color: rgba(192, 62, 2, 0.7);
+	color: #D5D5D5;
+	position: relative;
+	top: 20em;
+	left: 10em;
+	text-align: left;
+}
+
+h1 {
+	border-bottom: 2px solid #E09515;
+	padding-bottom: 5px;
+	padding-left: 5px;
+	margin: 0;	
+}
+
+h2 {
+	margin: 0;
+	padding-left: 5px;
+}
+
+/* === Letters =========================================================================================================================*/
+
+#letter-cv,
+#letter-research,
+#letter-teaching,
+#letter-diversity {
+	background-color: #E09515;
+	position: absolute;
+	margin-top: 50px;
+	width: 100%;
+	height: 90vh;
+	display: none;
+	min-width: 1100px;
+}
+
+#letter-cv {
+	z-index: 10;
+}
+
+.letter-cv-box1,
+.letter-cv-box2 {
+	float: left;
+	margin-top: 75px;
+	margin-left: 15%;
+}
+
+#letter-research {
+	z-index: 40;
+}
+
+#letter-teaching {
+	z-index: 20;
+}
+
+#letter-diversity {
+	z-index: 30;
+}
+
+.text {
+	width: 70%;
+	height: 80vh;
+	margin: auto;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	padding: 5%;
+	overflow: auto;
+	background-color: #E09515;
+}
+
+/* ::-webkit-scrollbar :the background of the bar itself.
+::-webkit-scrollbar-button the directional buttons on the scrollbar.
+::-webkit-scrollbar-track the empty space “below” the progress bar.
+::-webkit-scrollbar-track-piece the top-most layer of the the progress bar not covered by the thumb.
+::-webkit-scrollbar-thumb the draggable scrolling element resizes depending on the size of the scrollable element.
+::-webkit-scrollbar-corner the bottom corner of the scrollable element, where two scrollbar meet.
+::-webkit-resizer the draggable resizing handle that appears above the scrollbar-corner at the bottom corner of some elements. */
+
+.text::-webkit-scrollbar {           /* The background of the bar itself. */
+    width: 10px;
+    background-color: #E09515;
+} 
+
+.text::-webkit-scrollbar-thumb {     /* The draggable scrolling element resizes depending on the size of the scrollable element. */
+    background-color: #C03E02;
+}
+
+.text::-webkit-scrollbar-track {     /* The empty space “below” the progress bar. */
+    background-color: #E09515;
+    border: 2px solid #C03E02;
+}
+
+#cite {
+	width: 80%;
+	margin: 0 auto;
+	text-align: center;
+}
+
+#cite p {
+	text-align: right;
+}
+
+.experience-section {
+	border-top: 1px solid #C03E02;
+}
+
+.experience-section p:nth-child(1) {
+	width: 20%;
+}
+
+.experience-section p:nth-child(2) {
+	width: 70%;
+}
+
+.experience-section p {
+	display: inline-block;
+	vertical-align: top;
+}
+
+/* ===Sub-Menus ======================================================================================================================= */
+
+.cv-link-container {
+	margin-bottom: 35px;
+	padding-bottom: 5px;
+}
+
+.cv-link-container:not(.no-border-bottom) {
+	border-bottom: 1px solid #C03E02;
+}
+
+.cv-link-container a {
+	text-decoration: none;
+	font-size: 1em;
+	color: #0B0B0B;	
+}
+
+.cv-link-container img {
+	margin: 12px auto 0 10px;
+	float: right;
+	height: 7px;
+	width: 10px;
+}
+
+.cv-link-container:not(.no-border-bottom):hover {	/*This is the botton underline of the different fields*/
+	border-bottom: 2px solid #C03E02;
+	padding-bottom: 4px;	
+}
+
+.cv-link-container:hover > a,
+.cv-link-container:hover div:nth-child(1) a { /* This is to change color on the main fields of the menu*/
+	color: #C03E02;
+}
+
+.sub-menu-publications,
+.sub-menu-conferences,
+.sub-menu-teaching,
+.sub-menu-record-service {	/* This is the sub-menu */
+	font-size: 0.9em;
+	padding-left: 20px;	
+    display: none;
+    opacity: 0;
+    height: 0;
+    transition: opacity 0.2s ease-out, height 0.10s ease-out;
+}
+
+.sub-menu-publications a,
+.sub-menu-conferences a,
+.sub-menu-teaching a,
+.sub-menu-record-service a {  /*This displays the sub-menu fields in a list*/
+	display: block;
+}
+
+.sub-menu-publications a:hover,
+.sub-menu-conferences a:hover,
+.sub-menu-teaching a:hover,
+.sub-menu-record-service a:hover { 		/*Change the color of the fields on hover*/
+	color: #C03E02;	
+}
+
+.underline {
+	border-bottom: 1px solid #C03E02;
+	padding-bottom: 4px;
+}
+
+#menu-publications:hover .underline,
+#menu-conferences:hover .underline,
+#menu-teaching:hover .underline,
+#menu-record-service:hover .underline {
+	border-bottom: 2px solid #C03E02;
+}
+
+/* add/remove to and from the submenues */
+.show {
+    display: block;
+    height: 1px;
+}
+
+.altura {
+    height: 80px;   
+}
+
+.opacy{
+    opacity: 1;  
+}
+
+/* === Curriculum vitae ================================================================================================================*/
+
+.curriculum {
+	background-color: rgba(224,149,21, 1);
+	margin: 0;
+	padding: 100px;
+}
+
+.curriculum h2 {
+	text-align: center;
+}
+
+.curriculum h4 {
+	border-bottom: 2px solid #0B0B0B;
+}
+
+.title {
+	font-size: 1em;
+}
+
+.curriculum .experience-section {
+	width: 70%;
+	margin: 0 auto;
+}
+
+.curriculum div div:nth-child(2) {
+	border: none;
+}
+
+/* Publications */
+
+#publications p {
+	width: 100%;
+}
+
+#publications a {
+	color: #C03E02;
+}
+
+#publications a:hover {
+	text-decoration: none; 
+}
+
+/* Memberships */
+
+#membership > ul {
+	margin-left: 13%;
+}
+
+#membership ul li {
+	display: list-item;
+}
+
+/* === To-Top ==========================================================================================================================*/
+
+.to-top {
+	width: 50px;
+	height: 50px;
+	position: fixed;
+	right: 0;
+	top: 320px;
+	text-align: center;
+	display: none;	
+}
+
+.to-top img {
+	height: 25px;
+	width: 40px;
+	margin-top: 12px;
+}
+
+.show-arrow {
+	display: block;
+}
+
+/* === Testimonials =====================================================================================================================*/
+
+.quote {
+	width: 80px;
+	height: 50%;
+	display: inline-block;
+	vertical-align: top;
+	margin: 30px 50px;
+}
+
+.testimonial {
+	height: auto;
+	background-color: rgb(192, 62, 2);
+	padding: 5%;
+}
+
+.testimonial cite {
+	display: inline-block;
+	color: #E09515;
+	width: 70%;
+	margin: 50px auto 0 auto;
+}
+
+.testimonial p {
+	text-align: right;
+	color: #E09515;
+	width: 70%;
+	margin: 60px auto;
+}
+
+.testimonial hr {
+	border: 1px solid #E09515; 
+}
+
+/* === Footer ===========================================================================================================================*/
+
+footer {
+	text-align: center;
+	background-color: rgb(162, 52, 2);
+	height: 58vh;
+	min-height: 400px;
+	padding-top: 5%;
+}
+
+/* Contact */
+
+#contact {
+	width: 50%;
+	padding-top: 50px;
+	font-size: 1.5em;
+	border: 2px solid #E09515;
+	margin: auto;
+	margin-bottom: 5%;
+}
+
+#contact p {
+	margin: 60px auto;
+
+}
+
+#contact a,
+#contact p {
+	color: #D5D5D5;
+}
+
+#contact a:hover {
+	text-decoration: none;
+	color: #E09515;
+}
+
+/* jorge */ 
+
+.jorge {
+	background-color: rgb(132, 42, 2);
+	color: #E09515;
+	height: 60px;
+	padding-top: 15px;
+	font-size: 0.8em;
+}
+
+.jorge a {
+	color:  #E09515;
+}
+
+.jorge a:hover {
+	text-decoration: none;
+}
+
+

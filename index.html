@@ -1,0 +1,1080 @@
+<!DOCTYPE html>
+<html lang= "en">
+
+<head>
+	<!--Basic Page Needs ===================================-->
+    <title>Anna M. Schwartz</title>
+    <!--Mobile Specific Metas ===============================-->
+    <meta charset="UTF-8">
+    <!--Fonts ===============================================-->
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+SC" rel="stylesheet">
+    <!--CSS ================================================-->
+    <link rel="stylesheet" href="css/style.css">
+    <!--JavaScript ===========================================-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/jquery.easing.min.js"></script><!--jQuery Easing plugin required by scrolling function-->
+    <script src="js/scrolling-nav.js"></script><!-- Scrolling function-->
+</head>
+<body>
+	<header id= "header">
+		<nav class ="menu">
+			<ul class="cosa">
+				<li>
+					<div class= "wrapper" id= "wrapper-cv">
+						<button id= "btn-Cv" class= "button-menu" type= "button" onclick= "showCv()">Curriculum vitae</button>
+					</div>
+				</li>	
+				<li>
+					<div class= "wrapper" id= "wrapper-research">
+						<button id= "btn-research" class= "button-menu" type= "button" onclick= "showResearch()">Research</button>
+					</div>
+				</li>	
+				<li>
+					<div class= "wrapper" id= "wrapper-teaching">
+						<button id= "btn-teaching" class= "button-menu" type= "button" onclick= "showTeaching()">Teaching</button>
+					</div>
+				</li>	
+				<li>
+					<div class= "wrapper" id= "wrapper-diversity">
+						<button id= "btn-diversity" class= "button-menu" type= "button" onclick= "showDiversity()">Diversity</button>
+					</div>
+				</li>	
+				<li>
+					<a href= "#contact" class= "page-scroll" class= "button-menu">Contact</a>
+				</li>
+			</ul>
+		</nav>
+	</header>
+
+	<div class= "letter" id= "letter-cv">
+		<div class= "letter-cv-box1">
+			<div class= "cv-link-container">
+				<a href= "#positions" class="page-scroll">Professional Positions</a>
+			</div>
+			<div class= "cv-link-container">
+				<a href= "#education" class="page-scroll">Education</a>
+			</div>
+			<div class= "cv-link-container">
+				<a href= "#grants" class="page-scroll">Grants, Awards, and Fellowships</a>
+			</div>
+			<div class= "cv-link-container no-border-bottom" id= "menu-publications">
+				<div class= "underline">
+					<a class= "link">Publications</a><img src = "images/Arrow2.png" alt= "Arrow">
+				</div><!--underline-->
+				<div class= "sub-menu-publications">
+					<a href= "#books" class="page-scroll">Books</a>
+					<a href= "#reviewed" class="page-scroll">Peer-Reviewed Articles</a>
+					<a href= "#chapters" class="page-scroll">Chapters</a>
+					<a href= "#progress" class="page-scroll">Publications in Progress</a>
+					<a href= "#non-reviewed" class="page-scroll">Non-Peer Reviewed Articles</a>
+				</div><!--sub-menu-publications-->		
+			</div><!--menu-publications-->	
+
+			<div class= "cv-link-container no-border-bottom" id= "menu-conferences">
+				<div class= "underline">
+					<a>Conferences, Presentations, and Papers</a><img src = "images/Arrow2.png" alt= "Arrow">
+				</div><!--underline-->
+				<div class= "sub-menu-conferences">
+					<a href= "#national-internat" class="page-scroll">National and International</a>
+					<a href= "#regional" class="page-scroll">Regional and Local</a>
+					<a href= "#workshops" class="page-scroll">Workshops</a>
+				</div><!--sub-menu-conferences-->
+			</div><!--menu-conferences-->
+		</div><!--letter-cv-box1-->
+
+		<div class= "letter-cv-box2">
+			<div class= "cv-link-container no-border-bottom" id= "menu-teaching" >
+				<div class= "underline">
+					<a>Teaching and Professional Experience</a><img src = "images/Arrow2.png" alt= "Arrow">
+				</div><!--underline-->
+				<div class= "sub-menu-teaching">
+					<a href= "#teach" class="page-scroll">Teaching</a>
+					<a href= "#non-teaching" class="page-scroll">Non-Teaching</a>
+				</div><!--sub-menu-teaching-->
+			</div><!--menu-teaching-->
+
+			<div class= "cv-link-container">
+				<a href= "#under-mentoring" class="page-scroll">Undergraduate Mentoring - Student Research Presentations</a>
+			</div>
+			<div class= "cv-link-container no-border-bottom" id= "menu-record-service">
+				<div class= "underline">
+					<a>Record of Service</a><img src = "images/Arrow2.png" alt= "Arrow">
+				</div><!--underline-->
+				<div class= "sub-menu-record-service">
+					<a href= "#internatio" class="page-scroll">International</a>
+					<a href= "#natio" class="page-scroll">National</a>
+					<a href= "#local" class="page-scroll">Local</a>
+					<a href= "#university" class="page-scroll">University</a>
+				</div><!--sub-menu-record-service-->
+			</div><!--menu-record-service-->
+
+			<div class= "cv-link-container">
+				<a href= "#research" class="page-scroll">Research and Consulting</a>
+			</div>
+			<div class= "cv-link-container">
+				<a href= "#membership" class="page-scroll">Professional Membership</a>
+			</div>			
+		</div><!--letter-cv-box1-->
+	</div><!--letter-cv-->
+
+	<div class= "letter" id= "letter-research">
+		<div class= "text">
+			<h3>Research Statement of Purpose</h3>
+			<p>In my first year of college, an English professor showed me an idea which she attributed to V.S. Ramachandran's on how people draw two synonyms differently. Ramachandran had people draw the contrast between ecstasy and rapture, which they frequently contrasted as a starburst and a swirl, respectively. The etymological origins of these synonyms are the purported reason for this association, yet this information is not part of the everyday use of these words, or even apparent in a dictionary. Still, as I replicated the findings with friends, it surprised me that proficient English speakers showed a sensitivity to these etymological origins without any capacity to explain why. I theorized that the process by which we all visualized the contrast between these similar abstract concepts was enculturation – the slow exposure to patterns of stimuli that establish the norms, concepts and values of a community. As I progressed through my undergraduate years, I developed an increasing fascination with complex mental representations that could not be acquired with one trial learning – what are the cognitive requirements and experiences necessary to correctly associate two abstract synonyms, on tasks like the "analogies" section of the SATs?</p>
+			<p>I do not yet have a word for this type of thinking, but for now I will refer to it as symbolic, pattern-based decision making. I see an undefined space for calculations in the mind, and to understand this space is to understand an important aspect of more complex thinking that will have important applications in education. For now, I will describe it as a "space" based on implicit memory where cultural and linguistic constructs are formed by the mind's extraction of patterns from repeated exposures to complex stimuli. These patterns may or may not be accessible to conscious thought and yet we are able to draw on these patterns to make decisions which represent some cohesive mental representations and are consistent across tasks. The experiences that shape these patterns in a person are created in their environment, which means that the affordances of that person's ecology along with the cultural behaviors exhibited by other people around them combine to shape the patterns they extract. This creates a tension between continuity and change in the patterns of behavior of members of a contextually framed group of people (i.e. who live in a particular place at a particular time and form a community). These patterns then form the substrate of types of thinking which allow us to make intuitive decisions while drawing on patterns from hundreds of thousands of memories and experiences.</p>
+			<p>Understanding the nature of symbolic pattern-based constructs, their role in human communities, and their cognitive underpinnings requires the study of several processes: a) exploring the way conceptual mental representations manifest in decision-making processes and behaviors, b) studying how people synthesize a pattern out of repeated exposures to infinitely variable stimuli, c) understanding whether intuitive problem solving and executive function connect in ways that are subject to voluntary control and awareness or not, d) identifying how our human cultures provide a framework that helps us to make sense of the extraordinary volume of experiences we process by establishing institutions of authority to triage information, and e) comparing the tendency to conserve the community's symbolic patterns with the tendency to adapt to new ecological contexts or demands made by competing identities.</p>
+			<p>These themes underly the projects I have worked on since before beginning my study of human development. I did my senior honors work as an undergraduate reviewing research and anecdotes comparing human abilities in language to the abilities of parrots, and human abilities in producing stone tools to the manual abilities of both crows and orangutans. My conclusions were that the processes underlying complex language skills like grammar and the production of an object like an Acheulian hand-axe (a type of stone tool produced by Homo erectus over a million years ago) are similar. Researchers have begun to study this hypothesis, finding support for my conjecture that Acheulian tools require a much more complex set of decisions, taking into account more judgments (e.g. angle, momentum, number of pieces that must be removed to produce a tool that will accomplish the purpose) and thus relying on the central executive is necessary for Acheulian tools but not Oldowan tools (an older, simpler typology that can be produced with fewer strokes; Stout, Hecht, Kreisheh, Bradley & Chaminade, 2015). The decisions required to produce the tool seemed to me, and now to others, as similar to the those that allow the production of a sentence, a parallel that could afford a small window into human evolution. Morgan et al. (2015) found a different parallel between language and flint-knapping: The transmission of Oldowan tool-making technology improves with explicit and intentional teaching, more so with language than with only gesture, but not with simple imitation or emulation. This finding adds another small window which raises the possibility that these two functions evolved in parallel and thus may rely on similar underlying functions and may also have co-evolved. Taken together, these findings support my undergraduate intuition that complex language abilities are connected to increasing sophistication in stone tool technologies and that both rely on the evolution of the ability to slowly accumulate the knowledge of patterns governing a series of actions so that appropriate decisions can be made to successfully achieve a complex goal.</p>
+			<p>My dissertation work was inspired by a project doing departmental assessment. I was tasked with assessing whether Introductory Psychology effectively taught students research ethics, a system of rules that they must learn to intuitively apply. After reading many brief open-ended responses where students attempted to explain the importance of institutional review boards in research conducted on human participants, I began to notice a pattern. Some students justified the need for research ethics with statements that were concerned with punishment while others were concerned with a person's need for protection from harm. At first I wondered whether this pattern of responses was tied to different levels of moral reasoning indicating individual differences in development, but then I began to wonder, given the uniquely diverse population of students at the College of Staten Island, whether the differences were associated with cultural patterns of reasoning. There was some limited initial evidence that this was so, as I identified a significant association between New Yorkers of Anglo-European heritage with the rationale of protection from harm and New Yorkers of East Asian heritage with the rationale of obedience and punishment. I began to wonder how heritage cultural values interacted with the cultural values underlying the system of ethical values being taught to them as part of training in academic psychology. The prevailing discourse about the myth of the "melting pot" of American culture claims that heritage cultures are eliminated in favor of a homogeneous "American" norm, but this would imply that education erases the values imbued in us by our families, which is problematic if true and implausible to me.</p>
+			<p>To further examine this finding, I used the context of the 2016 election to examine how predictors of voting preferences that had been identified in prior research, such as authoritarianism and sexism, contributed to voting preferences in an environment like the College of Staten Island, where there is a unique confluence of white, suburban conservatives with urban, multi-cultural New Yorkers from the other boroughs. I was interested in, for example, authoritarianism, because it provides a theoretical connection between the values of parenting practices and the values of political preferences, although it was surprisingly unrelated to any of the measures I used to evaluate cultural values. Similarly, I expected hostile sexism, another previously identified predictor of voting preferences, to be associated with cultural values. In line with prior research, I found that endorsement of hostile sexism significantly predicted a preference for Donald Trump but gender identity did not, contrary to the predictions made by prior research. This finding disassociates gender identity and hostile sexism, which I theorize stems from the fact that sexism is a cultural value based on how members of the community observe men and women being treated and portrayed as a systematic pattern. I am currently working with an undergraduate to pilot an intervention to see if observing female role models in positions of authority (such as being invited to speak at college commencements) can reduce implicit bias against women in leadership positions and reduce prejudice stemming from role incongruity (Eagly & Karau, 2002).</p>
+			<p>A new predictor I developed for my dissertation, heritage-culture individualism, significantly predicted participants' voting preference for Donald Trump over and above other validated scales measuring individual differences in endorsement of individualism and collectivism (Triandis & Gelfand, 1998; Singelis, 1994). Heritage-culture individualism can be defined as the predicted level of individualism based on the average of the levels identified in one's heritage culture(s) despite living in a community that is not in the geographical region where the heritage culture(s) emerged. The predictions were based on levels identified by Hofstede (1983). My findings suggest that the impact of heritage culture is a significant component that shapes voting decisions, and I hope they will lead other scholars to join me in investigating whether some of these predictors, such as authoritarianism and sexism, are cultural values rather than individual differences. I hope that this reframing will allow people to better understand the nature of prejudice and the challenges of changing people's attitudes towards disempowered groups.</p>
+			<p>I am currently working to develop vignettes to interrogate Americans' ideas, across specific regional cultures in the United States, about the circumstances that determine when they prioritize personal needs over the needs of a group, or over the precepts of an ideology. I regularly spend time identifying every resource I can to observe patterns in cultures, not only by reading academic findings but also by taking advantage of every opportunity I can find to interact with somebody from a different culture (including different flavors of American culture), trying to directly observe how different cultures operate in practice and constantly testing the hypotheses I have read about in the literature against these observations. Because of my dissertation, I began to wonder about some unusual patterns of differences that I have noticed between the cultural norms in communities that have been rated as high on individualism or low on individualism. Several new hypotheses are emerging from this reflection and observation, including that there are American collectivists, and that collectivism (and individualism) are poorly defined in terms of the strength of priority given to the group and the possible range in sizes of groups which collectivistic cultures prioritize. I also intend to design research to better understand if my findings regarding the lack of relationship between individualism and authoritarianism were simply inconclusive. The relationship between individualism/collectivism and authoritarianism seem likely to be linked in some way that I have not yet imagined, since the role of law and authority in cultural values concerning group organization seems inescapably important. Patricia Greenfield's ecological theory of social change and human development posits that ecological contexts will shift communities from being more individualistic to more collectivistic and vice versa. My own findings add to this theory by highlighting the resistance to change that cultural values can exhibit, as deeply embedded, implicit constructs. For example, I am curious about how different cultures across the United States negotiate the tension between America's strong individualism and the emphasis that some American communities place on the role of religion, or participation in sports teams, or the military. A recent historical/sociological book called American Nations: A History of the Eleven Rival Regional Cultures of North America (Woodard, 2011) identifies cultural regions within the United States that are tied to cultural heritages from different European cultures, and this research could provide a framework of hypotheses to test whether the cultural parameters of different communities may have connections to the heritage cultures of generations ago. Finally, my dissertation suggests that heritage values contribute to voting preferences, so an understanding of these 11 regions may help to clarify or suggest mechanisms to reduce current polarization in American politics.</p>
+			<p>The slow development of skills is one piece of this puzzle: I have been working on a project in the field of Scholarship of Teaching and Learning since 2015 to assess the values of graduate student teachers. Over the past three years, as part of the leadership of the Graduate Student Teaching Association, I have worked to find a way to capture how novice teachers' attitudes shape the behaviors and decisions they make in their teaching practice. This research is theoretically driven but with a clear application to better serve graduate students with professional development opportunities that will help them develop their teaching abilities as they enter the professoriate. In particular, we wanted to know how experience, coursework, and professional development altered graduate students' ideas of what makes a model teacher, and we found that graduate students with no experience expected to be challenged by effectively transmitting content, whereas more experienced graduate student teachers have become increasingly concerned with how to foster deeper learning and the development of skills such as critical thinking and effective organization of information for written communication (although not at the expense of ensuring the transmission of information). I think of this as studying the pedagogical enculturation of graduate students as they acquire the teaching norms of tertiary education. My role in this endeavor has been one of leadership, bringing together a team of like-minded graduate students who each brought an idea or a scale to include in the project, resulting in a more robust project than any one of us, alone, could have achieved.</p>
+			<p>This project has not only deepened my understanding of my program of research, but also deepened my reflection on my own teaching practice as I learn to develop curriculum materials on my own. I see a common thread in the way I approach my research and my pedagogy – a process of slow-mapping, carefully curating the ecology of the classroom to create circumstances which allow student's skills to unfurl, and to help them develop skills that will serve them throughout their lifespan, while at the same time, my experiences in the classroom slowly shape my pedagogical skills. As we write up our findings, we have already collected data for the second stage in this programmatic research: We have explored novice teachers endorsement of the importance of deep learning and begun to explore whether novice teachers consider students' motivations when designing educational materials, but our findings led us to wonder about teachers' attitudes towards fostering the development of autonomy and agency. I theorize autonomy and agency to be necessary components of individualism, and I wonder about teachers' roles in shaping students' autonomy in universities where the students are culturally diverse. Very little research has examined the role of teachers' values in shaping autonomy and agency in students in tertiary academic settings. Do some American college teachers focus more than others on scaffolding autonomy and agency? Do students in classes where teachers intentionally scaffold agency become more agentic, and if so, does it help them to succeed? Future work will tie these values to learning outcomes and students' awareness of the teachers' goals and intentions.</p>
+			<p>Education and voting are not the only important applications of my interest in researching how the slow development of implicit conceptual representations occurs across domains of human cognition – it is also applicable to the study of second language acquisition and adult development of language skills. Two years ago, I began working with an international team of researchers at NYU, CUNY and from the Turkish Board of Education to create digital "care-package" interventions to support Syrian refugees living in Turkey, including an immersive, scaffolded, computer-based program to help the Arabic-speaking children learn Turkish. Studying Persian (and a little bit of Arabic) helped me anticipate these teaching challenges because I had learned to read a different alphabet, and my experience learning Spanish in an immersive environment has also given me valuable experiential insights. These insights have been guiding me in helping to design a language-learning platform which is both an active tool for supporting a disadvantaged population who have little access to effective language-learning opportunities and one further step towards understanding the slow, deep, implicit conceptual development necessary for second language acquisition. The goal of the project is to helping learners of Turkish intuit agglutinative grammatical patterns implicitly by immersive exposure to examples paired with images but without having explicit explanations. My collaboration on this project has continued as we have refined the method and are utilizing more sophisticated tools, like PsychoPy, to program a language-learning platform to explore the role of executive functions and other cognitive individual differences in the ability of adults to acquire foreign language with very different structures than their own language, just from observing and intuiting the patterns of stimuli presented to them.</p>
+			<p>Taking these findings together, I am at the beginning of a program researching how people slowly form abstract concepts such as cultural values and how these values may resist alteration even when exposed to changing ecological pressures. I want to investigate the cultural and linguistic patterns which are so robust that they pass from generation to generation, and to explore where those transmissions maintain or lose fidelity in order to both help communities preserve their cultures in an increasingly globally connected world, and also to help communities (such as my own) that wish to reshape some of their cultural values in order to reduce prejudice and discrimination.</p>
+		</div><!--text-->
+
+	</div><!--end text-research-->
+	
+	<div class= "letter" id= "letter-teaching">
+		<div class= "text">
+			<h3>Teaching Statement</h3>
+			<p>I base my teaching philosophy on 4 pillars: Storytelling, Collaboration, Skills, and Reflection. These pillars embody my teaching goals, which are to facilitate student development of complex skills such as writing, data analysis, or studying through the use of activities which engage students, stories which captivate them, and teaching practices which have been scientifically evaluated. I have taught for four years, during which time I taught many sections of Introductory Psychology, as well as Lifespan Development, Statistics, and two versions of Experimental Psychology. I want each student to feel like the course is tailor-made to help them grow, and I achieve this by incorporating ideas from Universal Design, a paradigm for increasing accessibility in course design so that a student with disabilities does not need special accommodations, and all students benefit from the inclusiveness and thoughtful design. I also have coordinated Introductory Psychology for four years, where I was responsible for training instructors and developing and assessing course materials, giving me a different perspective on teaching.</p>
+			<p>To ensure that my teaching methodology continues to evolve and improve, I look for evidence of effectiveness in two ways: through research in the Scholarship of Teaching and Learning (SoTL) and through reflection papers. SoTL is a method of advancing best practices in higher education, through instructors engaging in evidence-based assessment of pedagogical efficacy. My first SoTL project seeded my interest in skill development and lead to my involvement with the Graduate Student Teaching Association (Div. 2, APA, Society for the Teaching of Psychology) under Professor Brooks, culminating with two years as Deputy Chair of this national organization dedicated to the support of college level instruction. My SoTL work today has expanded to collaborating with Professor Moody at CUNY College of Technology on developing tools to aid in the development of computational thinking skills. In addition to reflecting through SoTL research, I ask my students to write reflection papers: They write a letter of advice to their future peers which gives me feedback but also leads the students to reflect on their journey. Without that letter, they might not take a moment to see how far they had traveled.</p>
+			<p>My first SoTL project taught me my first lesson about student skills: Students are more likely to develop skill at studying, writing and thinking analytically when their courses are scaffolded to support skill development than when they are organized purely to transmit information. As a result, I structure course assignments in short installments, each of which is worth a small but steadily increasing percentage of the grade. Small assignments allow for more formative feedback. When teaching Introductory Psychology, I start helping students build their skills with small, low-stakes writing assignments and daily activities meant to enhance their analytical thinking skills. In Experimental Psychology, an advanced, writing-intensive course, I start students with 4-5 scientific posters (some of which are created in teams, and others as a demonstration of individual learning) as a method of scaffolding their development from novice readers of research to expert writers of research. By the time they are writing a full APA-style lab report, many of the fundamentals are internalized. One of my former students perfectly encapsulates how empowering this experience is:</p>
+
+			<div id= "cite">
+				<cite>
+					"The first day of class she asked [us]... to do a poster; okay now, let me be honest I did not even know where to start… She basically came and explained it to us individually. I was amazed on how I was able to create a poster. I was proud of myself."
+				</cite>
+				<p>Female student, Summer 2017.</p> 
+			</div>
+
+			<p>During this assignment students practice paraphrasing, selecting a narrative focus and strategically interpreting and selecting appropriate data to help them structure their narrative. My priority is that each assignment helps my students augment at least three separate skills: storytelling enhances study habits, helps build writing skills and lets me build rapport with students. Similarly, each activity accomplishes multiple targets. Skills are rarely employed one at a time - think of learning to speak. Children are exposed to all components of language at once and when their skills are robust enough, speech emerges.</p>
+			<p>To facilitate skill development and increase student engagement, I often present course material through stories. Stories are at the heart of social existence, which means they are at the heart of our most basic human activities, including how we learn: A memory, after all, is a personal story. Storytelling relates to the 5 APA goals for undergraduate psychology majors by helping them gain a knowledge base in psychology, think scientifically, behave ethically in a diverse world, communicate effectively and use professional tools of psychology (APA, 2013). When students collaborate, they share their experiences through stories, letting them learn vicariously through other's experiences. Humans, as Jerome Bruner points out, are designed to process and store infinite quantities of stories, and stories are designed to hold bits of information together so that they are accessible to recall. For example, psychologists studying learning processes recommend a studying technique called elaborative learning (Endres et al., 2017): In this technique, the student takes the information they are trying to remember and devises a connection between the new and the old, tying it into previous experiences. Practicing telling stories as a mode of enhancing retention and making connections helps students to build rhetorical skill and think more analytically. This, in turn, gives them a sense of confidence that they are contributing to the "story" of that field of research. They develop agency, or the sense that their voice can change the world.</p>
+			<p>Throughout the semester, I encourage students to collaborate, help each other and share their knowledge – a student who struggles with one task, like statistics, may have strong writing abilities to share. Having students collaborate achieves several goals: One is to allow me to spend one-on-one time with each student. Another is to give each student some piece of knowledge which they must teach others, giving them importance as a member of the community (inspired by Fahrenheit 451). This increases emotional and intellectual investment because their motivations are now social rather than selfish; they are no longer attending class simply to earn a grade, but also because their peers need their help, which fosters intrinsic motivation to learn. Finally, by teaching, they develop a stronger grasp of it than when passively "learning", enhancing metacognition.</p>
+			<p>Because my interests are diverse, I can work with students to help them develop their own diverse interests in many different course contexts – sometimes these collaborations excited students enough to inspire them to pursue a collaboration, something which I enjoy. For example, after teaching a class about implicit gender bias in the workplace in one of my upper-level undergraduate courses at Boston College in the spring of 2018, a student came to me and proposed a project. We have been working throughout the summer of 2018 and the current semester to examine the representation of women in the role of commencement speakers at prestigious Universities, and the way female and male students might benefit from seeing a woman lauded for her authority, power, and prestige. The purpose of this project is to encourage the BC community to submit suggestions of women who have made impressive contributions to social justice to speak at Boston College's commencement address.</p>
+			<p>I look forward to collaborating with faculty members in designing new courses, curricula, and assessments at the program in Developmental Psychology at California State University, Sacramento. I am confident in my ability to teach a broad range of undergraduate and graduate courses including, but not restricted to: Research Methods, Introductory Psychology, Adult Development, and Multicultural Issues. Coursework is an excellent context in which to help students practice their academic skills, explore narrative techniques and develop a sense of agency. For the same reasons, I look forward to mentoring students in their research projects and learning from their creative input.</p>
+			<p>I hope you find my credentials to be a good fit with your department's needs.</p>
+
+			<h6>Teaching</h6>
+
+			<div class= "experience-section">
+				<p>2018-2019</p>
+				<p><b>Professor, Adult Psychology</b> (APSY 3244)<br>
+				Undergraduate Developmental Psychology Course, Boston College<br>
+				4 sections, 20-25 Students</p>
+			</div>
+			<div class= "experience-section">
+				<p>2018 Fall</p>
+				<p><b>Professor, Child, Growth and Development</b> (APSY 1030)<br>
+				Undergraduate Developmental Psychology Course, Boston College<br>
+				1 section, 25-35 Students</p>
+			</div>
+			<div class= "experience-section">
+				<p>2018 Fall</p>
+				<p><b>Professor, Research Methods and Analyses</b> (APSY 2216)<br>
+				Undergraduate Developmental Psychology Course, Boston College<br>
+				1 section, 20-30 Students</p>
+			</div>
+			<div class= "experience-section">
+				<p>2018-2019 Spring</p>
+				<p><b>Professor, Family, School, and Society</b> (APSY 1031)<br>
+				Undergraduate Developmental Psychology Course fulfilling Diversity Requirement, Boston College<br>
+				3 sections, 25-35 Students</p>
+			</div>
+			<div class= "experience-section">
+				<p>2017 Fall</p>
+				<p><b>Instructor, Experimental Psychology: Cognition and Perception</b> (PSY 213)<br>
+				Undergraduate Writing Intensive Course, Queens College<br>
+				1 section, 20 Students</p>
+			</div>
+			<div class= "experience-section">
+				<p>2017 Summer Fall</p>
+				<p><b>Instructor, Experimental Psychology: Child Development</b> (PSY 335)<br>
+				Undergraduate Capstone Course, College of Staten Island<br>
+				2 sections (including summer intensive), 20 Students</p>
+			</div>
+			<div class= "experience-section">
+				<p>2013-2016</p>
+				<p><b>Instructor, Introductory Psychology</b> (PSY 100)<br>
+				Undergraduate Course, College of Staten Island<br>
+				3 sections, Ranging from 50-110 Students</p>
+			</div>
+			<div class= "experience-section">
+				<p>2013-2014</p>
+				<p><b>Instructor, Introductory Psychology</b><br>
+				Hybrid Undergraduate Course, College of Staten Island<br>
+				2 sections, Ranging from 25-50 Students</p>
+			</div>
+			<div class= "experience-section">
+				<p>2016 Spring</p>
+				<p><b>Instructor, Lifespan Development</b><br>
+				Undergraduate Honors Course, College of Staten Island</p>
+			</div>
+			<div class= "experience-section">
+				<p>2015 Fall</p>
+				<p><b>Instructor, Statistics for Social Sciences</b><br>
+				Undergraduate Course, Queens College</p>
+			</div>
+		</div><!--text-->
+	</div><!--letter-teaching-->
+
+	<div class= "letter" id= "letter-diversity">
+		<div class= "text">
+			<h3>Diversity Statement</h3>
+			<p>After graduating from college I worked for a year in the homes of students who were attending schools rated as "failing" in New York City, tutoring underserved, Spanish-speaking students and getting to know their families. What led me to do this work was my fascination with other cultures, and with the contributions that other cultures have made to humanity. This interest dates back to my childhood, when I developed a fascination with female historical figures in the middle ages, when women's role in society was valued least in the history of the western world – figures such as Eleanor of Aquitaine and Hildegard of Bingen. Despite the obstacles they faced as women, their thoughts continue to shape us and impact us today – for example, Eleanor of Aquitaine patronized troubadours who espoused the values of chivalry, altering the norms for treating women in her time through selective patronage of art and storytelling, which were the only means available to her.</p>
+			<p>These lifelong experiences led me to CUNY, where I was fortunate to be part of an international community. I have friends and students from CUNY who were born in Albania, Azerbaijan, China, Pakistan, Egypt, Lebanon, Israel, Nigeria, Morocco, Ethiopia, Mexico, Nicaragua, El Salvador, Guatemala, Puerto Rico, Saudi Arabia, Romania, Bulgaria, Italy, Guinea, Turkey, Armenia, Spain, France, Greece, Germany, UK, India, Cambodia, Syria, Iran, Trinidad and Tobago, and Canada. CUNY gave me the opportunity to meet people from all over the world, but I brought my curiosity to these interactions and this is what allowed me to learn from them, discussing recipes and learning new words. A student I was mentoring once brought me spiced pickles to try, and a Lebanese colleague once invited me over to cook Lebanese food with her. Those personal connections, in turn, lead me to be read more about the places my friends and students are from, which enriches my life, my mind, and my commitment to diversity. Now that I have left CUNY, I sometimes think to myself that they "can take the psychologist out of CUNY, but can't take the CUNY out the psychologist." This is a value which I have tried to integrate into all of my teaching – without exposure, it is hard to generate curiosity and openness!</p>
+			<p>Diversity is not for tolerating, and nor is the goal of diversity to erase differences between us so we all become a homogenous mass of Sameness, as Lois Lowry named it in The Giver. Valuing diversity is looking at the world and recognizing the points of tension, of friction, of the differences between one's many intersecting identities and the intersections of the identities of others, but also valuing the contributions they can make.</p>
+			<p>I live this commitment in how I try to understand my students as both individuals and products of their experiences as believers in religions, members of heritage cultures, speakers of languages, wearers of racial identities, users of gender identities, and students with a unique composition of abilities and weaknesses. By integrating these values in my teaching, I have been able to create an environment where international students or learners of English feel comfortable asking me to help guide them to resources which can support them and seeking my mentorship beyond the classroom. For example, one of my current students is a Chinese national who is visiting from his program of study in Japan, and has felt isolated because he "thinks Japanese" and so other Chinese students on campus are unwelcoming, and the Japanese students regard him as a foreigner. I have reached out to a Korean student from last semester who I developed a strong rapport with, and both students agreed that they might be able to support one another and share their unique but not totally dissimilar experiences. I try to listen to all of my students, and in so doing, I hear the distress and anguish in the voices of the international matriculated students, the visiting international students, and even the students who immigrated to the United States with their families in childhood, and I want to support them and to help them appreciate the power that the their bicultural and bilingual experiences give them. I am currently volunteering for the Conversation Partners Program organized by the Office of International Students and Scholars, meeting weekly with an international graduate student who wants to practice her English.</p>
+			<p>In the future, I would like to take an active leadership role in continuing to develop supports and programming specifically to support international students and immigrants as they adjust to college-level academic work and social life in the United States.</p>
+		</div><!--text-->
+	</div><!--letter-diversity-->
+
+
+	<div class= "top-panel">
+		<div class= "container-title">
+			<h1>Anna M. Schwartz, PhD</h1>
+			<h2>Developmental Psychologist</h2>
+		</div><!-- end container-title-->	
+	</div><!-- end top-panel -->
+
+	
+		<div class= "to-top" onclick= "scrollToTop()">
+			<img src = "images/Arrow.png" alt= "To top">
+		</div><!--to-top-->
+	
+	<div class= "testimonial">
+		<hr>
+		<img class= "quote" src="images/quot.png" alt= "Quotation">
+		<cite>
+			I cannot thank you enough for reading my paper and providing feedback throughout. You raise many great points and counterarguments that I did not even consider before you mentioned them. I have never had the opportunity to receive feedback in this way and I think it is a great way to exchange ideas.  I only wish the university structure was more similar to this. I enjoy that your questions aim to challenge me and form a bit of discomfort (which we both agree is essential to learning). I am going to have to think hard about the points you raised and do some more research.<br><br>
+			Above all of this, I want to thank you, Anna, for stimulating the academic side of me and encouraging me to pursue new ventures. You have made me think about learning in ways I never have before. I think your approach to academia is one that many people could benefit from and I am extremely happy that I have had the pleasure to be your student for multiple semesters. You have inspired me in ways no professor has before and I cannot thank you enough for that."<br>
+		</cite>
+		<p>Student of Child Development, 2018</p>
+		<hr>
+	</div>
+
+	<div class= "curriculum">
+		<h2>Curriculum vitae</h2>
+		<div id= "positions">
+			<h4>PROFESIONAL POSITIONS</h4>
+			<div class= "experience-section">
+				<p>2018-2020</p>
+				<p><b>Visiting Assistant Professor</b><br>
+				Department of Counseling, Developmental, and Educational Psychology<br>
+				Lynch School of Education<br>
+				Boston College</p>
+			</div><!--experience-section-->
+		</div><!--positions-->
+
+		<div id= "education">
+			<h4>EDUCATION</h4>
+			<div class= "experience-section">
+				<p>2018</p>
+				<p><b>Ph.D. in Psychology, Human Development Track</b><br>
+				The Graduate Center at the City University of New York<br>
+				<u>Dissertation title</u>:<i> "Persistence of cultural heritage in a multicultural context: examining factors that shaped voting preferences in the 2016 election"</i><br>
+				<u>Advisor</u>: Dr. Kristen Gillespie-Lynche</p>
+			</div><!--experience-section-->
+			<div class= "experience-section">
+				<p>2015</p>
+				<p><b>M.A. in Psychology (en route)</b><br>
+				The Graduate Center at the City University of New York<br>
+				<u>Thesis title</u>:<i>"Study Behaviors in Introductory Psychology Students:<br>
+				Memorization and Metacognition"</i><br>
+				<u>Advisor</u>: Dr. Patricia J. Brooks</p>
+			</div><!--experience-section-->
+			<div class= "experience-section">
+				<p>2006</p>
+				<p><b>B.A. in Archaeology with Honors</b><br>
+				Boston University<br>
+				<u>Independent Work for Distinction title</u>: <i>"From Hand to Hammer:<br>
+				Evolutionary advantages of tool use and intelligence for hominids and other animals"</i><br>
+				<u>Advisor</u>: Dr. Curtis Runnels</p>
+			</div><!--experience-section-->
+		</div><!--education-->
+
+		<div id= "grants">
+			<h4>GRANTS, AWARDS, AND FELLOWSHIPS</h4>
+			<div class= "experience-section">
+				<p>2017-2018</p>
+				<p>Dissertation Fellowship: Committee for Interdisciplinary Science Studies<br>
+				Graduate Center, City University of New York</p>
+			</div><!--experience-section-->
+			<div class= "experience-section">
+				<p>2016-2017</p>
+				<p>Graduate Assistantship "A"<br>
+				College of Staten Island, City University of New York</p>
+			</div><!--experience-section-->
+			<div class= "experience-section">
+				<p>2011-2016</p>
+				<p>Science Fellowship<br>
+				The Graduate Center, City University of New York</p>
+			</div><!--experience-section-->
+			<div class= "experience-section">
+				<p>2015-2016</p>
+				<p>Graduate Assistantship "B"<br>
+				The College of Staten Island of the City University of New York</p>
+			</div><!--experience-section-->
+			<div class= "experience-section">
+				<p>2014-2015</p>
+				<p>Graduate Assistantship "A"<br>
+				The College of Staten Island of the City University of New York</p>
+			</div><!--experience-section-->
+			<div class= "experience-section">
+				<p>2013-2014</p>
+				<p>Graduate Assistantship "A"<br>
+				The College of Staten Island of the City University of New York</p>
+			</div><!--experience-section-->
+			<div class= "experience-section">
+				<p>2016</p>
+				<p>Doctoral Student Research Grant, <i>What do graduate student teachers know about teaching?</i> ($1,500)</p>
+			</div><!--experience-section-->
+			<div class= "experience-section">
+				<p>2016</p>
+				<p>Doctoral Student Council Grant, <i>Ninth Annual Subway Summit</i> ($750)</p>
+			</div><!--experience-section-->
+			<div class= "experience-section">
+				<p>2016</p>
+				<p>SAGE Teaching Innovations & Professional Development Award ($1,250)<br>
+				SAGE Publications, Inc. and the Society for Teaching of Psychology</p>
+			</div><!--experience-section-->
+			<div class= "experience-section">
+				<p>2015</p>
+				<p>Doctoral Student Council Grant, <i>Eighth Annual Subway Summit</i> ($750)</p>
+			</div><!--experience-section-->
+			<div class= "experience-section">
+				<p>2013-2014</p>
+				<p>Graduate Assistantship "A" - PSY 100 Coordinator<br>
+				The College of Staten Island of the City University of New York</p>
+			</div><!--experience-section-->
+		</div><!--grants-->
+
+		<div id= "publications">
+			<h4>PUBLICATIONS</h4>
+			<h5 id="books">BOOKS</h5>
+			<div class= "experience-section">
+				<p>Obeid, R., <b>Schwartz, A.M.</b>, Shane-Simpson, C., & Brooks, P. J. (Eds.). (2017). <i>How We Teach Now: The GSTA Guide to Student-Centered Teaching.</i> Retrieved from the Society for the Teaching of Psychology web site: <a href= "http://teachpsych.org/ebooks/howweteachnow" target="_blank">http://teachpsych.org/ebooks/howweteachnow</a></p>
+			</div><!--experience-section-->
+
+			<h5 id= "reviewed">PEER-REVIEWED ARTICLES</h5>
+			<div class= "experience-section">
+				<p>Carmichael, C.L., <b>Schwartz, A.M.</b>, Coyle, A., Goldberg, M. H. (in press). A Classroom Activity for Teaching Kohlberg's Theory of Moral Development. <i>Teaching of Psychology.</i></p>
+			</div><!--experience-section-->
+
+			<div class= "experience-section">
+				<p>Sawyer, J. E., Obeid, R., Bublitz, D., <b>Schwartz, A. M.</b>, Brooks, P. J., & Richmond, A. S. (2017). Which forms of active learning are most effective: Cooperative learning, writing-to-learn, multimedia instruction, or some combination?. <i>Scholarship of Teaching and Learning in Psychology,</i> 3(4), 257-271. <a href= "http://doi/10.1037/stl0000095" target= "_blank">http://doi/10.1037/stl0000095</a></p>
+			</div><!--experience-section-->
+
+
+			<h5 id= "chapters">CHAPTERS</h5>
+
+			<div class= "experience-section">
+				<p><b>Schwartz, A.M.</b>, Powers, K.L., Galazyn, M., Brooks, P.J. (2017). <i>Crowdsourcing course preparation ideas to strengthen your teaching through collaboration.</i> Retrieved from <a href= "http://teachpsych.org/ebooks/howweteachnow" target= "_blank">http://teachpsych.org/ebooks/howweteachnow</a></p>
+			</div><!--experience-section-->
+
+			<div class= "experience-section">
+				<p>Brooks, P. J., Dow, E. A., Jović, S., Kreniske, P., Panjwani, A., Sawyer, J., <b>Schwartz, A.M.</b>, Shane-Simpson, C. & Yuksel-Sokmen, P. O. (2014). <i>Useful Books and Web sites for Developing Pedagogy in the Teaching of Psychology.</i> Preparing the New Psychology Professoriate: Helping Graduate Students Become Competent Teachers, 2nd ed. 258-277.</p>
+			</div><!--experience-section-->
+
+			<div class= "experience-section">
+				<p>Sekerina, I. A., Brooks, P. J., Campanelli, L., & <b>Schwartz, A.</b> (2016).<i> Quantifier-spreading in school-age children: An eye-tracking study.</i> Springer.</p>
+			</div><!--experience-section-->
+
+			<h5 id= "progress">PUBLICATIONS IN PROGRESS</h5>
+
+			<div class= "experience-section">
+				<p><b>Schwartz, A.M.</b>, Saltzman, E.S., Whiteman, R.C., Brooks, P.J. (in progress). Endorsement of Model Teaching Criteria Among Graduate Student Instructors. <i>Teaching of Psychology.</i></p>
+			</div><!--experience-section-->
+
+			<div class= "experience-section">
+				<p><b>Schwartz, A.M.</b>, Saltzman, E.S., Moody, D. (in progress). Designing Educational Tools to Develop Computational Thinking, not Coding Literacy. <i>GSTF Journal on Computing.</i></p>
+			</div><!--experience-section-->
+
+			<h5 id= "non-reviewed">NON-PEER REVIEWED PUBLICATIONS</h5>
+
+			<div class= "experience-section">
+				<p><b>Schwartz, A.M.</b>, Saltzman, E. and Che, E. (June, 2018). <i>Summer Plans: Launching the New GSTA Survey!.</i> Society for Teaching of Psychology Monthly Newsletter.</p>
+			</div><!--experience-section-->
+
+			<div class= "experience-section">
+				<p><b>Schwartz, A.M.</b>, Obeid, R., Powers, K. (May, 2018). <i>Teaching APA Format in Experimental Psychology Through Poster Design.</i> GSTA Blog. <a href= "https://teachpsych.org/page-1784686/6205676" target= "_blank">https://teachpsych.org/page-1784686/6205676</a></p>
+			</div><!--experience-section-->
+
+			<div class= "experience-section">
+				<p><b>Schwartz, A.M.</b>, Sawyer, J., Ober, T., Che, E. (January, 2017). <i>GSTA Talks at the 10th Annual Subway Summit on Cognition and Education Research.</i> Society for Teaching of Psychology Monthly Newsletter.</p>
+			</div><!--experience-section-->
+
+			<div class= "experience-section">
+				<p>Baren, A., <b>Schwartz, A.M.</b>, Obeid, R. (January, 2017). <i>The GSTA at NITOP: the benefits of attending teaching conferences.</i> Society for Teaching of Psychology Monthly Newsletter.</p>
+			</div><!--experience-section-->
+
+			<div class= "experience-section">
+				<p>Ober, T., Sawyer, J., Yannaco, F., Obeid, R., <b>Schwartz, A.M.</b> (December, 2016). GSTA Corner: <i>Reflections on Participation in the SoTL Workshop: One Year Later.</i> Society for Teaching of Psychology Monthly Newsletter.</p>
+			</div><!--experience-section-->
+
+			<div class= "experience-section">
+				<p>Obeid, R., Parshina, O., <b>Schwartz, A.M</b>, Whiteman, R.C. (November, 2016). GSTA Corner: <i>Testimonials for the awesomeness of the ACT conference!</i> Society for Teaching of Psychology Monthly Newsletter.</p>
+			</div><!--experience-section-->
+
+			<div class= "experience-section">
+				<p>Obeid, R., <b>Schwartz, A.M.</b> (October, 2016). GSTA Corner: <i>Meet us in NYC for Our Annual Pedagogy Day!</i> Society for Teaching of Psychology Monthly Newsletter.</p>
+			</div><!--experience-section-->
+
+			<div class= "experience-section">
+				<p>Obeid, R., <b>Schwartz, A.M.</b> (September, 2016). GSTA Corner: <i>The GSTA at APA and Our Upcoming Events.</i> Society for Teaching of Psychology Monthly Newsletter.</p>
+			</div><!--experience-section-->
+
+			<div class= "experience-section">
+				<p><b>Schwartz, A.M.</b>, Obeid, R. (August, 2016). GSTA Corner: <i>Share your wisdom and insight through the GSTA’s Teaching Tips and Tricks Blog!</i> Society for Teaching of Psychology Monthly Newsletter.</p>
+			</div><!--experience-section-->
+
+			<div class= "experience-section">
+				<p><b>Schwartz, A.M.</b>, Obeid, R. (July, 2016). GSTA Corner: <i>Meetup at APA 2016 Denver!</i> Society for Teaching of Psychology Monthly Newsletter.</p>
+			</div><!--experience-section-->
+
+			<div class= "experience-section">
+				<p>Obeid, R., <b>Schwartz, A.M.</b> (June, 2016). GSTA Corner: <i>Spring Wrap-Up: What Have We Been Up To?</i> Society for Teaching of Psychology Monthly Newsletter.</p>
+			</div><!--experience-section-->
+
+			<div class= "experience-section">
+				<p><b>Schwartz, A.M.</b> (April, 2016) <i>Organization Apps as a Life Hack! Balancing Teaching with Research in Graduate School.</i> GSTA Blog. <a href= "http://teachpsych.org/page-1784686/3932588" target= "_blank">http://teachpsych.org/page-1784686/3932588</a></p>
+			</div><!--experience-section-->
+
+			<div class= "experience-section">
+				<p>Powers, K.L., <b>Schwartz, A.M.</b> (September, 2015) <i>What I did this summer.</i> GSTA Blog. <a href= "http://teachpsych.org/page-1784686/3551696" target= "_blank">http://teachpsych.org/page-1784686/3551696</a></p>
+			</div><!--experience-section-->
+
+			<div class= "experience-section">
+				<p><b>Schwartz, A.M.</b> (September, 2015) <i>Red Light Green Light Index Cards.</i> GSTA Blog. <a href= "http://teachpsych.org/page-1784686/3526422" target= "_blank">http://teachpsych.org/page-1784686/3526422</a></p>
+			</div><!--experience-section-->
+
+			<div class= "experience-section">
+				<p><b>Schwartz, A.M.</b> (March, 2015) <i>Perspective of the Mentors and Mentees of 2014.</i> GSTA Blog. <a href= "http://teachpsych.org/page-1784686/3503568" target= "_blank">http://teachpsych.org/page-1784686/3503568</a></p>
+			</div><!--experience-section-->
+
+			<div class= "experience-section">
+				<p>Obeid, R., Shane-Simpson, C., <b>Schwartz, A.M.</b> (November, 2014) <i>From Classroom Teaching to Teaching Research: A Getaway to Get Your Teaching Research Completed.</i> GSTA Blog. <a href= "http://teachpsych.org/page-1784686/3503585" target="_blank">http://teachpsych.org/page-1784686/3503585</a></p>
+			</div><!--experience-section-->
+
+			<div class= "experience-section">
+				<p><b>Schwartz, A.M.</b> (March, 2014) <i>A Tool for Understanding Students: The Discussion Forum.</i> GSTA Blog. <a href= "http://teachpsych.org/page-1784686/1514994" target= "_blank">http://teachpsych.org/page-1784686/1514994</a></p>
+			</div><!--experience-section-->
+
+		</div><!--publications-->
+
+		<div id= "conferences">
+			<h4>CONFERENCES, PRESENTATIONS, AND PAPERS</h4>
+
+			<h5 id= "national-internat">NATIONAL AND INTERNATIONAL</h5>
+
+			<div class= "experience-section">
+				<p>Apr 2018</p>
+				<p>Saltzman, E., <b>Schwartz, A.M.</b>, Whiteman, R., and Brooks, P.J. <i>How Do Graduate Students Teach? Distinguishing Student-Centered and Teacher-Centered Approaches.</i> Paper presented at the Annual Meeting of the American Educational Research Association, New York City.</p>
+			</div><!--experience-section-->
+			<div class= "experience-section">
+				<p>Oct 2017</p>
+				<p>Moody, D., <b>Schwartz, A.M.</b>, <i>Available Educational Tools' Impact on Developing Computational Thinking.</i> Paper presented at the International Conference on Computer Science Education: Innovation & Technology, Singapore.</p>
+			</div><!--experience-section-->
+			<div class= "experience-section">
+				<p>Oct 2017</p>
+				<p>Rose, M.C., <b>Schwartz, A.M.</b>, Tzuchi, T., Ober, T.M., Homer, B. D., Plass, J. L. <i>First steps in creating a free, immersive, and adaptive computer-assisted-language-learning (CALL) program for helping refugees develop language skills.</i> Poster session presented at the Biennial meeting of the Cognitive Development Society, Portland, OR.</p>
+			</div><!--experience-section-->
+			<div class= "experience-section">
+				<p>Oct 2017</p>
+				<p><b>Schwartz, A.M.</b>, Saltzman, E., Whiteman, R.C., Brooks, P.J. <i>Model Teaching Criteria Among Graduate Student Instructors.</i> Symposium presented at the meeting of the Society for the Teaching of Psychology's Annual Conference on Teaching, San Antonio, TX.</p>
+			</div><!--experience-section-->
+			<div class= "experience-section">
+				<p>May 2017</p>
+				<p><b>Schwartz, A.M.</b>, Shane-Simpson, C. <i>Teaching Style Impacts Learning More Than Teaching Method or Mode.</i> Poster session presented at the meeting of the Association for Psychological Science, Boston, MA.</p>
+			</div><!--experience-section-->
+			<div class= "experience-section">
+				<p>May 2017</p>
+				<p><b>Schwartz, A.M.</b>, Powers, K.L. <i>Why is it so hard to teach critical evaluation of sources? The potential impact of emotional salience on critical consumption of media.</i> Poster session presented at the meeting of the Association for Psychological Science, Boston, MA.</p>
+			</div><!--experience-section-->
+			<div class= "experience-section">
+				<p>May 2017</p>
+				<p><b>Schwartz, A.M.</b>, Guan, M. <i>Cultural Continuity: Maintaining Culturally Influenced Moral Reasoning Styles in a Multicultural Context.</i> Poster session presented at the meeting of the Association for Psychological Science, Boston, MA.</p>
+			</div><!--experience-section-->
+			<div class= "experience-section">
+				<p>May 2017</p>
+				<p>Whiteman, R., <b>Schwartz, A.M.</b>, Saltzman, E., Brooks, P.J. <i>Using TAGS to characterize approaches to teaching in graduate student instructors.</i> Poster session presented at the meeting of the Association for Psychological Science, Boston, MA.</p>
+			</div><!--experience-section-->
+			<div class= "experience-section">
+				<p>Aug 2016</p>
+				<p><b>Schwartz, A.M.</b>, Ober, T., Saltzman, E., Whiteman, R.C., Obeid, R., Brooks, P.J. <i>Promoting Student-Centered Teaching Through the Graduate Student Teaching Association.</i> Symposium Chair at the 124th Annual Meeting of the American Psychological Association, Denver, Colorado.</p>
+			</div><!--experience-section-->
+			<div class= "experience-section">
+				<p>Aug 2016</p>
+				<p><b>Schwartz, A.M.</b> <i>Teaching multi-faceted psychology as a single discipline.</i> Workshop leader at the 124th Annual Meeting of the American Psychological Association, Denver, Colorado.</p>
+			</div><!--experience-section-->
+			<div class= "experience-section">
+				<p>Aug 2015</p>
+				<p>Richmond, A.S., <b>Schwartz, A.M.</b> <i>GSTA Invited Address: An evidence-based guide for college and university teaching: Developing model teaching characteristics</i> Symposium Chair at the 123rd Annual Meeting of the American Psychological Association, Toronto, Canada.</p>
+			</div><!--experience-section-->
+			<div class= "experience-section">
+				<p>May 2015</p>
+				<p><b>Schwartz, A.M.</b>, Richmond, A.S., Brooks, P.J. <i>Metacognition vs. Memorization.</i> Poster session presented at the meeting of the Association for Psychological Science, New York City, NY.</p>
+			</div><!--experience-section-->
+			<div class= "experience-section">
+				<p>Aug 2014</p>
+				<p>Sekerina, I., Brooks, P.J., <b>Schwartz, A.M</b>. <i>Atypical Attention Patterns Associated with Quantifier Spreading Errors in School-Age Children.</i> Poster session presented at the meeting of the International Association for the Study of Child Language, Amsterdam, Holland.</p>
+			</div><!--experience-section-->
+
+			<h5 id= "regional">REGIONAL AND LOCAL</h5>
+
+			<div class= "experience-section">
+				<p>May 2016</p>
+				<p><b>Schwartz, A.M.</b>, Menkarious, M., Siddiqui, T. <i>Rethinking Kohlberg's stages: Styles of moral reasoning in the contexts of gender and multiculturalism.</i> Poster session presented at 8th Annual Research Day, The Graduate Center, The City University of New York, New York, NY.</p>
+			</div><!--experience-section-->
+			<div class= "experience-section">
+				<p>Mar 2016</p>
+				<p>Shane-Simpson, C., Saltzman, E., Ober, T., Whiteman, R., <b>Schwartz, A.M.</b>, Brooks, P.J. <i>The collaborative course preparation as a framework for training adjunct instructors: The Peer Mentorship model.</i> In A.M. Schwartz. (Chair), Student-Centered Pedagogy in Graduate-Student Instructors: Lessons from the Graduate Student Teaching Association. Symposium conducted at the meeting of the Eastern Psychological Association, New York City, NY.</p>
+			</div><!--experience-section-->
+			<div class= "experience-section">
+				<p>May 2015</p>
+				<p><b>Schwartz, A.M.</b>, Richmond, A.S., Brooks, P.J., Taher, A. <i>Metacognition vs. Memorization: a survey.</i> Poster session at 7th Annual Research Day, The Graduate Center, The City University of New York, New York, NY.</p>
+			</div><!--experience-section-->
+			<div class= "experience-section">
+				<p>Mar 2015</p>
+				<p><b>Schwartz, A.M.</b>, Richmond, A.S., Brooks, P.J. (March, 2015) <i>Metacognition: some programmatic research.</i> Paper presented at the meeting of the Farmingdale State College Teaching of Psychology Conference, Tarrytown, NY.</p>
+			</div><!--experience-section-->
+			<div class= "experience-section">
+				<p>Jan 2015</p>
+				<p><b>Schwartz, A.M.</b>, Richmond, A.S., Brooks, P.J. (March, 2015) <i>Metacognition in Honors Students.</i> Paper presented at 8th Annual Subway Summit, New York, NY.</p>
+			</div><!--experience-section-->
+			<div class= "experience-section">
+				<p>May 2014</p>
+				<p>Sekerina, I., Brooks, P.J., <b>Schwartz, A.M</b>. <i>Atypical Attention Patterns Associated with Quantifier Spreading Errors in School-Age Children.</i> Poster session presented at 6th Annual Research Day, The Graduate Center, The City University of New York, New York, NY.</p>
+			</div><!--experience-section-->
+			<div class= "experience-section">
+				<p>Mar 2014</p>
+				<p><b>Schwartz, A.M.</b>, Powers, K., Grose-Fifer, J., Davis, C., Pryiomka, K., Gillespie-Lynch, K., Obeid, R., Someki, F., Shane-Simpson, C. Bublitz, D., Brooks, P.J., Dow, E., O'Connor, M. (2014, March). <i>Self-monitoring
+				of study habits in an online community.</i> In A.M. Schwartz. (Chair), Turning Teaching into Research: Examples from the GSTA. Symposium conducted at the meeting of the Eastern Psychological Association, Boston, MA.</p>
+			</div><!--experience-section-->
+
+			<h5 id= "workshops">WORKSHOPS</h5>
+
+			<div class= "experience-section">
+				<p>Sep 2017</p>
+				<p><b>Workshop organizer</b> at GSTA workshop series<br>
+				<i>Creating Lessonplans for Backwards Design</i> Pedagogy Workshop<br>				
+				The Graduate Center, CUNY</p>
+			</div><!--experience-section-->
+			<div class= "experience-section">
+				<p>Apr 2017</p>
+				<p><b>Workshop organizer</b> at GSTA workshop series<br>
+				<i>Using Wordpress in Your Teaching</i> Pedagogy Workshop<br>				
+				The Graduate Center, CUNY</p><br>
+			</div><!--experience-section-->
+			<div class= "experience-section">
+				<p>Mar 2017</p>
+				<p><b>Workshop organizer</b> at GSTA workshop series<br>
+				<i>Fostering the Development of Writing Skills Across the Psychology Curriculum</i> Pedagogy Workshop<br>				
+				The Graduate Center, CUNY</p>
+			</div><!--experience-section-->
+			<div class= "experience-section">
+				<p>Nov 2016</p>
+				<p><b>Workshop organizer</b> at GSTA workshop series<br>
+				<i>Creative uses of digital technology</i> Pedagogy Workshop<br>				
+				The Graduate Center, CUNY</p>
+			</div><!--experience-section-->
+			<div class= "experience-section">
+				<p>Aug 2016</p>
+				<p><b>Workshop Attendee</b> at GSTA workshop series<br>
+				<i>Universal Design</i> Pedagogy Workshop<br>				
+				The Graduate Center, CUNY</p>
+			</div><!--experience-section-->
+			<div class= "experience-section">
+				<p>Mar 2016</p>
+				<p><b>Workshop organizer</b> at GSTA workshop series<br>
+				<i>Building students' writing skills through low stakes assignments and peer feedback</i> Pedagogy Workshop<br>			
+				The Graduate Center, CUNY</p>
+			</div><!--experience-section-->
+			<div class= "experience-section">
+				<p>Nov 2015</p>
+				<p><b>Workshop organizer</b> at GSTA workshop series<br>
+				<i>Fostering a Growth Mindset</i> Pedagogy Workshop<br>				
+				The Graduate Center, CUNY</p>
+			</div><!--experience-section-->
+			<div class= "experience-section">
+				<p>Sep 2015</p>
+				<p><b>Workshop organizer</b> at GSTA workshop series<br>
+				<i>Fostering Good Study Habits</i> Pedagogy Workshop<br>				
+				The Graduate Center, CUNY</p>
+			</div><!--experience-section-->
+			<div class= "experience-section">
+				<p>Sep 2015</p>
+				<p><b>Invited Teaching Activities Discussant</b> for Teaching of Psychology Course
+				Graduate Course, The Graduate Center, CUNY</p>
+			</div><!--experience-section-->
+			<div class= "experience-section">
+				<p>Sep 2015</p>
+				<p>Devices for Studying Psychology<br>
+				Session at <i>Fostering Good Study Habits</i> Pedagogy Workshop<br>
+				The Graduate Center, CUNY</p>
+			</div><!--experience-section-->
+			<div class= "experience-section">
+				<p>Sep 2015</p>
+				<p>Persuading Students to Improve their Habits<br>
+				Session at <i>Fostering Good Study Habits</i> Pedagogy Workshop<br>
+				The Graduate Center, CUNY</p>
+			</div><!--experience-section-->
+			<div class= "experience-section">
+				<p>Aug 2015</p>
+				<p><b>Workshop organizer</b> at GSTA workshop series<br>
+				<i>Achieving Total Student Participation</i> Pedagogy Workshop<br>				
+				The Graduate Center, CUNY</p>
+			</div><!--experience-section-->
+			<div class= "experience-section">
+				<p>Aug 2015</p>
+				<p>Index cards: How simple tools can be used creatively to structure engaged
+				learning activities<br>
+				Session at <i>Achieving Total Student Participation</i> Pedagogy Workshop<br>
+				The Graduate Center, CUNY</p>
+			</div><!--experience-section-->
+			<div class= "experience-section">
+				<p>Oct 2014</p>
+				<p><b>Mentee</b><br>
+				Workshop on the Scholarship of Teaching and Learning<br>
+				STP Annual Conference on Teaching (ACT)<br>
+				Atlanta, Georgia</p>
+			</div><!--experience-section-->
+		</div><!--conferences-->
+
+		<div id= "teaching">
+			<h4>TEACHING AND PROFESSIONAL EXPERIENCE</h4>
+			<h5 id= "teach">TEACHING</h5>
+				<div class= "experience-section">
+					<p>2018-2019</p>
+					<p><b>Professor, Adult Psychology</b> (APSY 3244)<br>
+					Undergraduate Developmental Psychology Course, Boston College<br>
+					4 sections, 20-25 Students</p>
+				</div><!--experience-section-->
+
+				<div class= "experience-section">
+					<p>2018 <br>Fall</p>
+					<p><b>Professor, Child, Growth and Development</b> (APSY 1030)<br>
+					Undergraduate Developmental Psychology Course, Boston College<br>
+					1 section, 25-35 Students</p>
+				</div><!--experience-section-->
+
+				<div class= "experience-section">
+					<p>2018 <br>Fall</p>
+					<p><b>Professor, Research Methods and Analyses</b> (APSY 2216)<br>
+					Undergraduate Developmental Psychology Course, Boston College<br>
+					1 section, 20-30 Students</p>
+				</div><!--experience-section-->
+
+				<div class= "experience-section">
+					<p>2018-2019 <br>Spring</p>
+					<p><b>Professor, Family, School, and Society</b> (APSY 1031)<br>
+					Undergraduate Developmental Psychology Course fulfilling Diversity Requirement, Boston College<br>
+					3 sections, 25-35 Students</p>
+				</div><!--experience-section-->
+
+				<div class= "experience-section">
+					<p>2017 <br>Fall</p>
+					<p><b>Instructor, Experimental Psychology: Cognition and Perception</b> (PSY 213)<br>
+					Undergraduate Writing Intensive Course, Queens College<br>
+					1 section, 20 Students</p>
+				</div><!--experience-section-->
+
+				<div class= "experience-section">
+					<p>2017 <br>Summer-Fall</p>
+					<p><b>Instructor, Experimental Psychology: Child Development</b> (PSY 335)<br>
+					Undergraduate Capstone Course, College of Staten Island<br>
+					2 sections (including summer intensive), 20 Students</p>
+				</div><!--experience-section-->
+
+				<div class= "experience-section">
+					<p>2013-2016</p>
+					<p><b>Instructor, Introductory Psychology</b> (PSY 100)<br>
+					Undergraduate Course, College of Staten Island<br>
+					3 sections, Ranging from 50-110 Students</p>
+				</div><!--experience-section-->
+
+				<div class= "experience-section">
+					<p>2013-2014</p>
+					<p><b>Instructor, Introductory Psychology</b><br>
+					Hybrid Undergraduate Course, College of Staten Island<br>
+					2 sections, Ranging from 25-50 Students</p>
+				</div><!--experience-section-->
+
+				<div class= "experience-section">
+					<p>2016 <br>Spring</p>
+					<p><b>Instructor, Lifespan Development</b><br>
+					Undergraduate Honors Course, College of Staten Island</p>
+				</div><!--experience-section-->
+
+				<div class= "experience-section">
+					<p>2015 <br>Fall</p>
+					<p><b>Instructor, Statistics for Social Sciences</b><br>
+					Undergraduate Course, Queens College</p>
+				</div><!--experience-section-->
+
+			<h5 id= "non-teaching">NON-TEACHING</h5>
+				<div class= "experience-section">
+					<p>2017</p>
+					<p><b>Tour Guide</b><br>
+					Big Onion Walking Tours (Historical tour guides)</p>
+				</div><!--experience-section-->
+
+				<div class= "experience-section">
+					<p>2015-2017</p>
+					<p><b>International Field School Co-Coordinator</b><br>
+					Fundación Instituto de Investigación de Prehistoria y Evolución Humana</p>
+				</div><!--experience-section-->
+
+				<div class= "experience-section">
+					<p>2015-2016</p>
+					<p><b>Advanced Placement Reading in Psychology</b><br>
+					The College Board</p>
+				</div><!--experience-section-->
+
+				<div class= "experience-section">
+					<p>2013-2017</p>
+					<p><b>Introductory Psychology Course Coordinator</b><br>
+					The College of Staten Island</p>
+				</div><!--experience-section-->
+
+				<div class= "experience-section">
+					<p>2006-2008</p>
+					<p><b>General Merchandise Floor Supervisor</b><br>
+					Barnes & Noble College Bookstores</p>
+				</div><!--experience-section-->
+
+				<div class= "experience-section">
+					<p>2001</p>
+					<p><b>Head Choreographer for Dept. of Theater</b><br>
+					Buck's Rock Creative Arts Camp</p>
+				</div><!--experience-section-->
+		</div><!--teaching-->
+
+		<div id= "under-mentoring">
+			<h4>UNDERGRADUATE MENTORING - STUDENT RESEARCH PRESENTATIONS</h4>
+			<div class= "experience-section">
+				<p>Spring 2018</p>
+				<p>McGrath, K.<br> 
+				<i>The development of adult-like cognition, belief change and critical thinking in undergraduates’ media literacy.</i><br>
+				Supervision of Independent Study<br>
+				Research Project in process, Boston, MA</p>
+			</div><!--experience-section-->
+
+			<div class= "experience-section">
+				<p>Fall 2018</p>
+				<p>Carroll, K.<br>
+				<i>The importance (and dearth) of female role models in leadership positions: a case for female commencement speakers at Boston College.</i><br>
+				Supervision of Independent Study<br>
+				Newspaper Op Ed, Boston, MA</p>
+			</div><!--experience-section-->
+
+			<div class= "experience-section">
+				<p>Jan 2017</p>
+				<p>Guan, M.<br>
+				<i>Broadening our class discussions of research ethics in multi-cultural contexts.</i><br>
+				Poster at the 10th Annual Subway Summit on Cognition and Educational Research, New York, NY</p>
+			</div><!--experience-section-->
+
+			<div class= "experience-section">
+				<p>Apr 2016</p>
+				<p>Menkarious, M., Siddiqui, T.<br>
+				<i>Rethinking Kohlberg’s stages: Styles of moral reasoning in the contexts of gender and multiculturalism.</i><br>
+				Poster at CSI Undergraduate Conference on Research, Scholarship, and Performance, Staten Island, NY</p>
+			</div><!--experience-section-->
+
+			<div class= "experience-section">
+				<p>May 2015</p>
+				<p>Taher, A.<br>
+				<i>Metacognition vs. Memorization: a survey.</i><br>
+				Poster session at 7th Annual Research Day, The Graduate Center, The City University of New York, New York, NY.</p>
+			</div><!--experience-section-->
+		</div><!--under-mentoring-->
+
+		<div id= "record-service">
+			<h4>RECORD OF SERVICE</h4>
+			<h5 id= "internatio">INTERNATIONAL</h5>
+			<div class= "experience-section">
+				<p>2016-2018</p>
+				<p>Project Hope – A Digital Care Package for Syrian Refugees in Turkey<br>
+				Digital Immersive Language Learning System for Learners of Turkish<br>
+				CREATE Lab, New York University</p>
+			</div><!--experience-section-->
+
+			<h5 id= "natio">NATIONAL</h5>
+
+			<div class= "experience-section">
+				<p>2016-2017</p>
+				<p>Graduate Student Teaching Association Deputy Chair</p>
+			</div><!--experience-section-->
+
+			<div class= "experience-section">
+				<p>2016-2017</p>
+				<p>State Advocacy Coordinator for New York State<br>
+				Advocacy Coordination Team<br>
+				APA Graduate Students (APAGS)</p>
+			</div><!--experience-section-->
+
+			<div class= "experience-section">
+				<p>2015</p>
+				<p>Campus Representative for CUNY<br>
+				Advocacy Coordination Team<br>
+				APA Graduate Students (APAGS)</p>
+			</div><!--experience-section-->
+
+			<div class= "experience-section">
+				<p>2015-2017</p>
+				<p>Pedagogy Workshop Series Coordinator<br>
+				Graduate Student Teaching Association,<br>
+				Society for the Teaching of Psychology,<br>
+				Division 2, American Psychological Association</p>
+			</div><!--experience-section-->
+
+			<div class= "experience-section">
+				<p>2014-2017</p>
+				<p>Mentorship Program Chair<br>
+				Peer Mentorship Program<br>
+				Graduate Student Teaching Association,<br>
+				Society for the Teaching of Psychology,<br>
+				Division 2, American Psychological Association</p>
+			</div><!--experience-section-->
+
+			<div class= "experience-section">
+				<p>2014-2017</p>
+				<p>Peer Mentor<br>
+				Peer Mentorship Program<br>
+				Graduate Student Teaching Association,<br>
+				Society for the Teaching of Psychology,<br>
+				Division 2, American Psychological Association</p>
+			</div><!--experience-section-->
+
+			<div class= "experience-section">
+				<p>2013</p>
+				<p>Member-at-large<br>
+				Graduate Student Teaching Association,<br>
+				Society for the Teaching of Psychology,<br>
+				Division 2, American Psychological Association</p>
+			</div><!--experience-section-->
+
+			<h5 id= "local">LOCAL</h5>
+
+			<div class= "experience-section">
+				<p>2016</p>
+				<p><b>Conference Co-Chair</b><br>
+				Pedagogy Day: 7th Annual Conference on the Teaching of Psychology<br>				
+				The Graduate Center, CUNY</p>
+			</div><!--experience-section-->
+
+			<div class= "experience-section">
+				<p>2016</p>
+				<p><b>Conference Co-Chair</b><br>
+				9th Annual Subway Summit on Cognition and Educational Research<br>				
+				The Graduate Center, CUNY</p>
+			</div><!--experience-section-->
+
+			<div class= "experience-section">
+				<p>2015</p>
+				<p><b>Conference Co-Chair</b><br>
+				8th Annual Subway Summit on Cognition and Educational Research<br>		
+				The Graduate Center, CUNY</p>
+			</div><!--experience-section-->
+
+			<div class= "experience-section">
+				<p>2015</p>
+				<p><b>Planning Committee</b><br>
+				Pedagogy Day: 6th Annual Conference on the Teaching of Psychology<br>				
+				The Graduate Center, CUNY</p>
+			</div><!--experience-section-->
+
+			<div class= "experience-section">
+				<p>2014</p>
+				<p><b>Activity Blitz Co-Chair</b><br>
+				Pedagogy Day: 5th Annual Conference on the Teaching of Psychology<br>				
+				The Graduate Center, CUNY</p>
+			</div><!--experience-section-->
+
+			<div class= "experience-section">
+				<p>2009</p>
+				<p><b>Assistant Teacher</b> (adult literacy/ESOL III)<br>
+				Haitian Multi-Service Community Center, Catholic Charities of Boston</p>
+			</div><!--experience-section-->
+
+			<div class= "experience-section">
+				<p>2008-2009</p>
+				<p><b>After-school tutoring services for city public schools’ pupils Tutor</b><br>
+				Champion Learning, New York City</p>
+			</div><!--experience-section-->
+
+			<h5 id= "university">UNIVERSITY</h5>
+
+			<div class= "experience-section">
+				<p>2018</p>
+				<p>Committee on Curriculum change, Boston College LSOE<br>
+				Subcommittee for developing learning objectives to coordinate the teaching of Adult Psychology and Adolescent Psychology core curriculum<br>
+				Boston College LSOE</p>
+			</div><!--experience-section-->
+
+			<div class= "experience-section">
+				<p>2018</p>
+				<p>Committee on Curriculum change<br>
+				Subcommittee for developing learning objectives to coordinate Research Methods and Statistics Core Curriculum<br>
+				Boston College LSOE</p>
+			</div><!--experience-section-->
+
+			<div class= "experience-section">
+				<p>2016-2017</p>
+				<p>Psychology Executive Committee,<br>
+				College of Staten Island Student Representative<br>
+				The Graduate Center, CUNY</p>
+			</div><!--experience-section-->
+
+			<div class= "experience-section">
+				<p>2012-2014</p>
+				<p>Human Development Coordination Committee<br>
+				Second Year Student Representative<br>
+				Psychology Department<br>
+				The Graduate Center, CUNY</p>
+			</div><!--experience-section-->
+
+		</div><!--record-service-->
+
+		<div id= "research">
+			<h4>RESEARCH AND CONSULTING</h4>
+
+			<div class= "experience-section">
+				<p>2016-2018</p>
+				<p>Creating a language learning platform using Psychopy to evaluate the acquisition of Turkish language learner’s comprehension and production of agglutinative grammatical constructions.</p>
+			</div><!--experience-section-->
+
+			<div class= "experience-section">
+				<p>2017</p>
+				<p>Educational Assessment: Teaching Kohlberg's stages of moral reasoning through analyzing comments under the Youtube video of Eric Garner’s death.</p>
+			</div><!--experience-section-->
+
+			<div class= "experience-section">
+				<p>2017</p>
+				<p>Educational Assessment: Learning to Code: Using art-based environments to help students to express creativity through computer programming.</p>
+			</div><!--experience-section-->
+
+			<div class= "experience-section">
+				<p>2017</p>
+				<p>Educational Assessment: How do student's learn to understand research concepts of reliability and validity through dissecting "IQ tests"?</p>
+			</div><!--experience-section-->
+
+			<div class= "experience-section">
+				<p>2016</p>
+				<p><b>Consultant for supplemental Interactive and Video Materials</b><br>
+				Norton Publishing Company</p>
+			</div><!--experience-section-->
+
+			<div class= "experience-section">
+				<p>2015</p>
+				<p>Departmental Assessment: Psychological Ethics in CUNY
+				Pathways, Middle States Accredited, and General Education Coursework</p>
+			</div><!--experience-section-->
+
+			<div class= "experience-section">
+				<p>2010-2011</p>
+				<p><b>Project Coordinator</b><br>
+				Improving Writing Skills in College Students<br>				
+				Boston University</p>
+			</div><!--experience-section-->
+
+			<div class= "experience-section">
+				<p>2009-2011</p>
+				<p><b>Research Assistant</b><br>
+				AVIAN Learning Experiment – Pepperberg Lab<br>				
+				Brandeis University</p>
+			</div><!--experience-section-->
+
+			<div class= "experience-section">
+				<p>2007-2010</p>
+				<p><b>Lab Supervisor, Field Supervisor</b><br>
+				El-Hemmeh Archaeological Excavation<br>				
+				Harvard University</p>
+			</div><!--experience-section-->
+
+			<div class= "experience-section">
+				<p>2008-2014</p>
+				<p><b>Excavator and Lab Technician</b><br>
+				Cueva de Angel Archaeological Excavation<br>				
+				Lucena, Spain</p>
+			</div><!--experience-section-->
+
+			<div class= "experience-section">
+				<p>2006-2007</p>
+				<p><b>Lab Technician</b><br>
+				Stone Age Lab<br>				
+				Harvard University</p>
+			</div><!--experience-section-->
+
+			<div class= "experience-section">
+				<p>2008</p>
+				<p><b>Lab Technician</b><br>
+				Zooarchaeology Lab<br>				
+				Harvard University</p>
+			</div><!--experience-section-->
+
+			<div class= "experience-section">
+				<p>2005</p>
+				<p><b>Excavator</b><br>
+				Castell Henllys Excavation<br>
+				York University</p>
+			</div><!--experience-section-->
+		</div><!--research-->
+
+		<div id= "membership">
+			<h4>PROFESSIONAL MEMBERSHIP</h4>
+			<ul>
+				<li>American Educational Research Association</li>
+				<li>Society for Research in Child Development</li>
+				<li>Cognitive Development Society</li>
+				<li>Psi Chi Graduate Student Member</li>
+				<li>American Psychological Association:</li>
+					<ul>
+						<li>APA Division 1: General Psychology</li>
+						<li>APA Division 2: Society for the Teaching of Psychology</li>
+						<li>Graduate Student Teaching Association</li>
+					</ul>
+
+				<li>Eastern Psychological Association</li>
+				<li>Midwest Psychological Association</li>
+				<li>Association for Psychological Science</li>
+				<li>International Association for the Study of Child Language (IASCL)</li>
+				<li>STP Annual Conference on Teaching (ACT) SoTL Mentorship Program</li>
+				<li>New York Paleontological Society</li>
+			</ul>
+		</div><!--membership-->
+	</div><!--curriculum-->
+
+	<div class= "testimonial">
+		<hr>
+		<img class= "quote" src="images/quot.png" alt= "Quotation">
+		<cite>
+			I think you are extremely approachable and supportive. I have needed help multiple times which you have taken great time & consideration to help me with. I thought the exam was well-worded and tested concepts well. I will be honest when saying I don't love the material (but that is typical of stats haha) but I do like the class. I feel like I am learning a lot in the class and find the APA teachings super helpful for future classes as well."
+		</cite>
+		<p>Student of Research Methods, 2018</p>
+
+		<img class= "quote" src="images/quot.png" alt= "Quotation">
+		<cite>
+			I think that you have been organized during your lectures and have been very helpful to me. You have been very supportive of me and my hard schedule. I feel that you understand me as a student athlete here and give me the opportunities that I need. I like that you take the time to sit down with your students and also hold us accountable. I like the material that you have taught us this far because to me it is very interesting. I have learned that communication is easier than it looks, and that this class has helped me reach out for help for other classes."
+		</cite>
+		<p>Student of Adult Psychology, 2018</p>
+		<hr>
+	</div><!--testimonials-->
+
+	<footer>
+		<div id= "contact">
+			<a href= "mailto:anna.schwartz@bc.edu">Anna.Schwartz@bc.edu</a>
+			<p>phone: 617 552 8128</p>
+		</div><!--contact-->
+
+		<div class= "jorge">
+			<p><i>-- Created by <a href= "http://jorgemartinjoven.dx.am/" target= "_blank">Jorge Martin Joven</a> --</i></p>
+		</div><!--jorge-->
+	</footer><!-- footer -->
+ 	<script src="js/script.js"></script>
+</body>
+
+</html>
